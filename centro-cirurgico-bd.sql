@@ -1,3 +1,5 @@
+#drop database centro_cirugico_bd;
+
 #criação banco
 create database centro_cirugico_bd;
 

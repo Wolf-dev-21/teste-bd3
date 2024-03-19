@@ -23,6 +23,22 @@ nome_responsavel varchar(10) not null,
 telefone_responsavel varchar(11) not null
 );
 
+
+
+#Backup tababela paciente
+create table tbl_paciente_bkp(
+cod_paciente int unsigned auto_increment primary key,    #unsigned = em sinal
+nome_paciente varchar(500) not null,
+telefone_paciente varchar(10) not null,
+celular_paciente varchar(11) not null,
+email_paciente varchar(100) not null,
+nome_responsavel varchar(10) not null,
+telefone_responsavel varchar(11) not null,
+date_delete datetime
+);
+
+
+
 #criação tababela medico
 create table tbl_medico(
 cod_medico int unsigned auto_increment primary key,
